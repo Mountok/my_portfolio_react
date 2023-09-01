@@ -1,0 +1,71 @@
+.text-ss{
+    font-size: 15px;
+    font-weight: 100;
+}
+.text-ms{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.text-bs{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navigator{
+    position: absolute;
+    bottom: 0;
+    padding:15px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.navigator .last_page, .navigator .next_page{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.navigator .arrow_line{
+    width: 150px;
+    margin: 0 10px;
+    height: 2px;
+    background-color: none;
+}   
+::after,::before{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.navigator .last_page .arrow_line:after{
+    position: absolute;
+    content: 'last page';
+    top: 0px;
+    left: 25px;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.navigator .next_page  .arrow_line::after{
+    position: absolute;
+    content: 'next page';
+    top: 0px;
+    right: 25px;
+    letter-spacing: 5px;
+    font-size: 12px; 
+}
+
+.navigator .last_page:hover .arrow_line::after {
+    letter-spacing: 7px;
+    font-size: 11px;
+
+}
+.navigator .next_page:hover .arrow_line::after {
+    letter-spacing: 7px;
+    font-size: 11px;
+}

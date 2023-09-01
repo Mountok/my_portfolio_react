@@ -1,0 +1,58 @@
+.contact_form{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 37px;
+}
+::placeholder{
+    color: rgb(151, 151, 151);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.inputs > input{
+    font-size: 20px;
+    background: none;
+    color: rgb(255, 241, 215);
+    border-bottom: 1px solid rgb(151, 151, 151);
+    padding: 10px 1px;
+    margin-bottom: 50px;
+    transition: .250s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.inputs > input:focus{
+    border-bottom-color: white;
+}
+.submitBtn{
+    border: 1px solid rgb(255, 241, 215);
+    background: black;
+    color: rgb(255, 241, 215);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .3s cubic-bezier(0.19, 1, 0.22, 1);
+    position: absolute;
+    left: 50%;
+    width: 45%;
+    height: 60PX;
+    transform: translateX(-50%);
+}
+.submitBtn:hover, .submitBtn:active{
+    background-color: rgb(255, 241, 215);
+    color: black;
+    
+}
