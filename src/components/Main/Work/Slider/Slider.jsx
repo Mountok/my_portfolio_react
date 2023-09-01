@@ -40,11 +40,11 @@ const Slider = ({slides}) => {
                                 </p>
                                 <p className='image_info_links'>
                                     {slide.github !== 'null' && (
-                                        <a href=""> <FaGithub className='image_info_links_item'/> </a>
+                                        <a href={slide.github} > <FaGithub className='image_info_links_item'/> </a>
                                     )}
 
                                     {slide.browser !== 'null' && (
-                                        <a href=""> <BsBrowserChrome className='image_info_links_item'/> </a>
+                                        <a href={slide.browser}> <BsBrowserChrome className='image_info_links_item'/> </a>
                                     )}
                                 </p>
                             </div>
