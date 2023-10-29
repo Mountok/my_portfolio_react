@@ -1,25 +1,19 @@
+
 import React from 'react'
 import './App.css'
-import Header  from './components/Header/Header.jsx'
+
+import HeaderPage from './Components/HeaderPage/HeaderPage.jsx'
 import {Routes,Route} from 'react-router-dom'
-import About from './components/Main/About/About.jsx'
-import Work from './components/Main/Work/Work.jsx'
-import ContactPage from './components/Main/Contact/ContactPage.jsx'
-import Error404 from './components/ErrorPages/Error404'
+import WorkPage from './Components/MainPage/WorkPage/WorkPage'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <div className="main">
+      <HeaderPage/>
       <Routes>
-        <Route path='/' element={<About />}/>
-        <Route path='/work' element={<Work />}/>
-        <Route path='/contact' element={<ContactPage />}/>
-        <Route path='*' element={<Error404 />}/>
+        <Route path='/' element={<WorkPage/>}/>
       </Routes>
-      </div>
     </>
   )
 }

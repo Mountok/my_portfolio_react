@@ -1,0 +1,28 @@
+
+.header{
+    font-family: "Phudu";
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color:  rgb(51, 253, 51);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav a{
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
